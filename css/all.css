@@ -108,7 +108,9 @@ nav .container {
     transition: all 0.3s ease;
     border: none;
     font-size: 0.9rem;
+    text-decoration: none !important;
 }
+
 
 .btn:hover {
     opacity: 0.9;
@@ -1966,66 +1968,3 @@ body {
     gap: 1rem;
 }
 
-/* Add these styles for the modal */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .modal-content {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            max-width: 400px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-            transform: translateY(-20px);
-            transition: transform 0.3s ease;
-        }
-        
-        .modal-overlay.active .modal-content {
-            transform: translateY(0);
-        }
-        
-        .modal-content h3 {
-            margin-bottom: 1rem;
-            color: #333;
-        }
-        
-        .modal-content p {
-            margin-bottom: 1.5rem;
-            color: #666;
-        }
-        
-        .modal-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-        }
-        
-        .modal-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: none;
-            border: none;
-            font-size: 1.2rem;
-            cursor: pointer;
-            color: #666;
-        }
